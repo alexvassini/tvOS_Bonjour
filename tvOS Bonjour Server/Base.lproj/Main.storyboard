@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="appleTV" orientation="landscape">
+        <adaptation id="light"/>
+    </device>
+    <dependencies>
+        <deployment identifier="tvOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="tvOS_Bonjour_Server" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7KK-9J-pzo">
+                                <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                                <subviews>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="vI0-5p-okr">
+                                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="T0n-rl-9lS">
+                                            <size key="itemSize" width="346" height="330"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" id="bPj-0S-4vY" customClass="CardCollectionViewCell" customModule="tvOS_Bonjour_Server" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="400"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                                    <rect key="frame" x="0.0" y="0.0" width="300" height="400"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rh0-5T-1lu" userLabel="ShadowView">
+                                                            <rect key="frame" x="0.0" y="0.0" width="300" height="400"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pvq-DW-iSf" userLabel="ContentView">
+                                                            <rect key="frame" x="4" y="4" width="292" height="392"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </view>
+                                                    </subviews>
+                                                </view>
+                                                <constraints>
+                                                    <constraint firstItem="rh0-5T-1lu" firstAttribute="leading" secondItem="bPj-0S-4vY" secondAttribute="leading" id="1l6-KO-Yyp"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Pvq-DW-iSf" secondAttribute="trailing" constant="4" id="2Jm-Xp-4RA"/>
+                                                    <constraint firstAttribute="trailing" secondItem="rh0-5T-1lu" secondAttribute="trailing" id="8si-bb-rOM"/>
+                                                    <constraint firstAttribute="bottom" secondItem="rh0-5T-1lu" secondAttribute="bottom" id="KRa-ZA-igI"/>
+                                                    <constraint firstItem="Pvq-DW-iSf" firstAttribute="leading" secondItem="bPj-0S-4vY" secondAttribute="leading" constant="4" id="ST0-Cj-Uny"/>
+                                                    <constraint firstItem="rh0-5T-1lu" firstAttribute="top" secondItem="bPj-0S-4vY" secondAttribute="top" id="gWf-iQ-2dr"/>
+                                                    <constraint firstItem="Pvq-DW-iSf" firstAttribute="top" secondItem="bPj-0S-4vY" secondAttribute="top" constant="4" id="vt9-Y3-BWR"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Pvq-DW-iSf" secondAttribute="bottom" constant="4" id="xTl-Zy-8bk"/>
+                                                </constraints>
+                                                <size key="customSize" width="300" height="400"/>
+                                                <connections>
+                                                    <outlet property="cardView" destination="Pvq-DW-iSf" id="jmn-L4-dmM"/>
+                                                    <outlet property="shadowView" destination="rh0-5T-1lu" id="u11-bu-oLy"/>
+                                                </connections>
+                                            </collectionViewCell>
+                                        </cells>
+                                    </collectionView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="vI0-5p-okr" secondAttribute="trailing" id="56T-tX-DxM"/>
+                                    <constraint firstItem="vI0-5p-okr" firstAttribute="leading" secondItem="7KK-9J-pzo" secondAttribute="leading" id="BbO-6k-tSl"/>
+                                    <constraint firstAttribute="bottom" secondItem="vI0-5p-okr" secondAttribute="bottom" id="iG6-1N-16X"/>
+                                    <constraint firstItem="vI0-5p-okr" firstAttribute="top" secondItem="7KK-9J-pzo" secondAttribute="top" id="vsj-BA-6aV"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7KK-9J-pzo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="0hN-aS-hdb"/>
+                            <constraint firstAttribute="trailing" secondItem="7KK-9J-pzo" secondAttribute="trailing" id="1ys-9a-gfh"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7KK-9J-pzo" secondAttribute="bottom" id="Dbb-1R-qTP"/>
+                            <constraint firstItem="7KK-9J-pzo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="MiK-ZH-aMo"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

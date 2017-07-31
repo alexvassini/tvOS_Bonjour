@@ -1,0 +1,430 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0631E10FD7A7425980521935 /* Pods_tvOS_Bonjour_Server.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59818629D82B6125F7B37E73 /* Pods_tvOS_Bonjour_Server.framework */; };
+		5E4FFEDD1F2BE65200C852D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4FFEDC1F2BE65200C852D4 /* AppDelegate.swift */; };
+		5E4FFEDF1F2BE65200C852D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4FFEDE1F2BE65200C852D4 /* ViewController.swift */; };
+		5E4FFEE21F2BE65200C852D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E4FFEE01F2BE65200C852D4 /* Main.storyboard */; };
+		5E4FFEE41F2BE65200C852D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E4FFEE31F2BE65200C852D4 /* Assets.xcassets */; };
+		5E4FFEEE1F2BE76600C852D4 /* BonjourTCPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4FFEEC1F2BE76600C852D4 /* BonjourTCPClient.swift */; };
+		5E4FFEEF1F2BE76600C852D4 /* BonjourTCPServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4FFEED1F2BE76600C852D4 /* BonjourTCPServer.swift */; };
+		5E4FFEF31F2BE78700C852D4 /* Bluetooth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4FFEF11F2BE78700C852D4 /* Bluetooth.swift */; };
+		5E4FFEF71F2BE86B00C852D4 /* BonjourUDPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4FFEF61F2BE86B00C852D4 /* BonjourUDPClient.swift */; };
+		5E4FFEF91F2BE89C00C852D4 /* BonjourUDPServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4FFEF81F2BE89C00C852D4 /* BonjourUDPServer.swift */; };
+		5E4FFEFB1F2BEBB700C852D4 /* BluetoothServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4FFEFA1F2BEBB700C852D4 /* BluetoothServer.swift */; };
+		8976460B1F2FC55000B81BEB /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8976460A1F2FC55000B81BEB /* CardCollectionViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0B65A5EB2C7C145C8278C614 /* Pods-tvOS Bonjour Server.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tvOS Bonjour Server.release.xcconfig"; path = "Pods/Target Support Files/Pods-tvOS Bonjour Server/Pods-tvOS Bonjour Server.release.xcconfig"; sourceTree = "<group>"; };
+		59818629D82B6125F7B37E73 /* Pods_tvOS_Bonjour_Server.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tvOS_Bonjour_Server.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E4FFED91F2BE65200C852D4 /* tvOS Bonjour Server.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tvOS Bonjour Server.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E4FFEDC1F2BE65200C852D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5E4FFEDE1F2BE65200C852D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5E4FFEE11F2BE65200C852D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5E4FFEE31F2BE65200C852D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5E4FFEE51F2BE65200C852D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E4FFEEC1F2BE76600C852D4 /* BonjourTCPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BonjourTCPClient.swift; sourceTree = "<group>"; };
+		5E4FFEED1F2BE76600C852D4 /* BonjourTCPServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BonjourTCPServer.swift; sourceTree = "<group>"; };
+		5E4FFEF11F2BE78700C852D4 /* Bluetooth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bluetooth.swift; sourceTree = "<group>"; };
+		5E4FFEF61F2BE86B00C852D4 /* BonjourUDPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BonjourUDPClient.swift; sourceTree = "<group>"; };
+		5E4FFEF81F2BE89C00C852D4 /* BonjourUDPServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BonjourUDPServer.swift; sourceTree = "<group>"; };
+		5E4FFEFA1F2BEBB700C852D4 /* BluetoothServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothServer.swift; sourceTree = "<group>"; };
+		8976460A1F2FC55000B81BEB /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
+		A7F294A37BD81698FCCA985C /* Pods-tvOS Bonjour Server.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tvOS Bonjour Server.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tvOS Bonjour Server/Pods-tvOS Bonjour Server.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5E4FFED61F2BE65200C852D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0631E10FD7A7425980521935 /* Pods_tvOS_Bonjour_Server.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		32F013D298209C87C9691F3B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59818629D82B6125F7B37E73 /* Pods_tvOS_Bonjour_Server.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5E4FFED01F2BE65200C852D4 = {
+			isa = PBXGroup;
+			children = (
+				5E4FFEDB1F2BE65200C852D4 /* tvOS Bonjour Server */,
+				5E4FFEDA1F2BE65200C852D4 /* Products */,
+				ED651CA16B56CC8F93ADACA2 /* Pods */,
+				32F013D298209C87C9691F3B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5E4FFEDA1F2BE65200C852D4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5E4FFED91F2BE65200C852D4 /* tvOS Bonjour Server.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5E4FFEDB1F2BE65200C852D4 /* tvOS Bonjour Server */ = {
+			isa = PBXGroup;
+			children = (
+				5E4FFEDC1F2BE65200C852D4 /* AppDelegate.swift */,
+				5E4FFEF51F2BE82000C852D4 /* UDP Server */,
+				5E4FFEF01F2BE76D00C852D4 /* Bluetooth Server */,
+				5E4FFEEB1F2BE6E100C852D4 /* TCP Server */,
+				5E4FFEDE1F2BE65200C852D4 /* ViewController.swift */,
+				8976460A1F2FC55000B81BEB /* CardCollectionViewCell.swift */,
+				5E4FFEE01F2BE65200C852D4 /* Main.storyboard */,
+				5E4FFEE31F2BE65200C852D4 /* Assets.xcassets */,
+				5E4FFEE51F2BE65200C852D4 /* Info.plist */,
+			);
+			path = "tvOS Bonjour Server";
+			sourceTree = "<group>";
+		};
+		5E4FFEEB1F2BE6E100C852D4 /* TCP Server */ = {
+			isa = PBXGroup;
+			children = (
+				5E4FFEEC1F2BE76600C852D4 /* BonjourTCPClient.swift */,
+				5E4FFEED1F2BE76600C852D4 /* BonjourTCPServer.swift */,
+			);
+			name = "TCP Server";
+			sourceTree = "<group>";
+		};
+		5E4FFEF01F2BE76D00C852D4 /* Bluetooth Server */ = {
+			isa = PBXGroup;
+			children = (
+				5E4FFEF11F2BE78700C852D4 /* Bluetooth.swift */,
+				5E4FFEFA1F2BEBB700C852D4 /* BluetoothServer.swift */,
+			);
+			name = "Bluetooth Server";
+			sourceTree = "<group>";
+		};
+		5E4FFEF51F2BE82000C852D4 /* UDP Server */ = {
+			isa = PBXGroup;
+			children = (
+				5E4FFEF61F2BE86B00C852D4 /* BonjourUDPClient.swift */,
+				5E4FFEF81F2BE89C00C852D4 /* BonjourUDPServer.swift */,
+			);
+			name = "UDP Server";
+			sourceTree = "<group>";
+		};
+		ED651CA16B56CC8F93ADACA2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A7F294A37BD81698FCCA985C /* Pods-tvOS Bonjour Server.debug.xcconfig */,
+				0B65A5EB2C7C145C8278C614 /* Pods-tvOS Bonjour Server.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5E4FFED81F2BE65200C852D4 /* tvOS Bonjour Server */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E4FFEE81F2BE65200C852D4 /* Build configuration list for PBXNativeTarget "tvOS Bonjour Server" */;
+			buildPhases = (
+				7B2686219E948D51313829D7 /* [CP] Check Pods Manifest.lock */,
+				5E4FFED51F2BE65200C852D4 /* Sources */,
+				5E4FFED61F2BE65200C852D4 /* Frameworks */,
+				5E4FFED71F2BE65200C852D4 /* Resources */,
+				A52B919A02AFF9A4B3BC4F11 /* [CP] Embed Pods Frameworks */,
+				3087FEDF910CC92FFC995D8C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "tvOS Bonjour Server";
+			productName = "tvOS Bonjour Server";
+			productReference = 5E4FFED91F2BE65200C852D4 /* tvOS Bonjour Server.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5E4FFED11F2BE65200C852D4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Alexandre  Vassinievski";
+				TargetAttributes = {
+					5E4FFED81F2BE65200C852D4 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = C2WX94X8CG;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 5E4FFED41F2BE65200C852D4 /* Build configuration list for PBXProject "tvOS Bonjour Server" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5E4FFED01F2BE65200C852D4;
+			productRefGroup = 5E4FFEDA1F2BE65200C852D4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5E4FFED81F2BE65200C852D4 /* tvOS Bonjour Server */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5E4FFED71F2BE65200C852D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E4FFEE41F2BE65200C852D4 /* Assets.xcassets in Resources */,
+				5E4FFEE21F2BE65200C852D4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3087FEDF910CC92FFC995D8C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tvOS Bonjour Server/Pods-tvOS Bonjour Server-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B2686219E948D51313829D7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A52B919A02AFF9A4B3BC4F11 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tvOS Bonjour Server/Pods-tvOS Bonjour Server-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5E4FFED51F2BE65200C852D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E4FFEF91F2BE89C00C852D4 /* BonjourUDPServer.swift in Sources */,
+				5E4FFEDF1F2BE65200C852D4 /* ViewController.swift in Sources */,
+				5E4FFEF31F2BE78700C852D4 /* Bluetooth.swift in Sources */,
+				5E4FFEF71F2BE86B00C852D4 /* BonjourUDPClient.swift in Sources */,
+				5E4FFEEE1F2BE76600C852D4 /* BonjourTCPClient.swift in Sources */,
+				5E4FFEFB1F2BEBB700C852D4 /* BluetoothServer.swift in Sources */,
+				5E4FFEEF1F2BE76600C852D4 /* BonjourTCPServer.swift in Sources */,
+				8976460B1F2FC55000B81BEB /* CardCollectionViewCell.swift in Sources */,
+				5E4FFEDD1F2BE65200C852D4 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5E4FFEE01F2BE65200C852D4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E4FFEE11F2BE65200C852D4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5E4FFEE61F2BE65200C852D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Debug;
+		};
+		5E4FFEE71F2BE65200C852D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = appletvos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5E4FFEE91F2BE65200C852D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7F294A37BD81698FCCA985C /* Pods-tvOS Bonjour Server.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = C2WX94X8CG;
+				INFOPLIST_FILE = "tvOS Bonjour Server/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.vassini.tvOS-Bonjour-Server";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		5E4FFEEA1F2BE65200C852D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B65A5EB2C7C145C8278C614 /* Pods-tvOS Bonjour Server.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = C2WX94X8CG;
+				INFOPLIST_FILE = "tvOS Bonjour Server/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.vassini.tvOS-Bonjour-Server";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5E4FFED41F2BE65200C852D4 /* Build configuration list for PBXProject "tvOS Bonjour Server" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E4FFEE61F2BE65200C852D4 /* Debug */,
+				5E4FFEE71F2BE65200C852D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E4FFEE81F2BE65200C852D4 /* Build configuration list for PBXNativeTarget "tvOS Bonjour Server" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E4FFEE91F2BE65200C852D4 /* Debug */,
+				5E4FFEEA1F2BE65200C852D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5E4FFED11F2BE65200C852D4 /* Project object */;
+}
