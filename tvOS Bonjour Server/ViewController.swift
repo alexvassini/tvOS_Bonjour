@@ -8,13 +8,17 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+    
+    @IBOutlet weak var collectionView: UICollectionView!
+    
 
     @IBOutlet weak var textView: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupCollectionView()
         bounjourHandler()
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -35,6 +39,50 @@ class ViewController: UIViewController {
             
         }
     }
+    
+    
+    func setupCollectionView() {
+        
+        collectionView.delegate = self
+        collectionView.dataSource = self
+    }
+    
+    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cardCollectionView", for: indexPath)
+        
+        return cell
+    }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 30
+    }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        var size = CGSize (width: 150, height: 200)
+        
+        size.width = self.view.frame.width / 10  - 16
+        size.height = self.view.frame.height / 3
+        
+        
+        return size
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        
+        return UIEdgeInsetsMake(4, 8, 4, 8)
+    }
+    
+    
+    
     
 }
 

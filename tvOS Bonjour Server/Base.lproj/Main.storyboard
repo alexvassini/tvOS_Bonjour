@@ -25,7 +25,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                                 <subviews>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="vI0-5p-okr">
-                                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                                        <rect key="frame" x="8" y="8" width="1904" height="1064"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="T0n-rl-9lS">
                                             <size key="itemSize" width="346" height="330"/>
                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -33,20 +33,35 @@
                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         </collectionViewFlowLayout>
                                         <cells>
-                                            <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" id="bPj-0S-4vY" customClass="CardCollectionViewCell" customModule="tvOS_Bonjour_Server" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="300" height="400"/>
+                                            <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cardCollectionView" id="bPj-0S-4vY" customClass="CardCollectionViewCell" customModule="tvOS_Bonjour_Server" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="200"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                                    <rect key="frame" x="0.0" y="0.0" width="300" height="400"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="150" height="200"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rh0-5T-1lu" userLabel="ShadowView">
-                                                            <rect key="frame" x="0.0" y="0.0" width="300" height="400"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="150" height="200"/>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pvq-DW-iSf" userLabel="ContentView">
-                                                            <rect key="frame" x="4" y="4" width="292" height="392"/>
+                                                            <rect key="frame" x="4" y="4" width="142" height="192"/>
+                                                            <subviews>
+                                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="OI" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BVF-L9-9DW">
+                                                                    <rect key="frame" x="31" y="0.0" width="80" height="46"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="80" id="rYp-lx-80L"/>
+                                                                    </constraints>
+                                                                    <nil key="textColor"/>
+                                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                                    <textInputTraits key="textInputTraits"/>
+                                                                </textField>
+                                                            </subviews>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstItem="BVF-L9-9DW" firstAttribute="top" secondItem="Pvq-DW-iSf" secondAttribute="top" id="7Fo-Vy-pUA"/>
+                                                                <constraint firstItem="BVF-L9-9DW" firstAttribute="centerX" secondItem="Pvq-DW-iSf" secondAttribute="centerX" id="zdI-PF-rot"/>
+                                                            </constraints>
                                                         </view>
                                                     </subviews>
                                                 </view>
@@ -60,7 +75,7 @@
                                                     <constraint firstItem="Pvq-DW-iSf" firstAttribute="top" secondItem="bPj-0S-4vY" secondAttribute="top" constant="4" id="vt9-Y3-BWR"/>
                                                     <constraint firstAttribute="bottom" secondItem="Pvq-DW-iSf" secondAttribute="bottom" constant="4" id="xTl-Zy-8bk"/>
                                                 </constraints>
-                                                <size key="customSize" width="300" height="400"/>
+                                                <size key="customSize" width="150" height="200"/>
                                                 <connections>
                                                     <outlet property="cardView" destination="Pvq-DW-iSf" id="jmn-L4-dmM"/>
                                                     <outlet property="shadowView" destination="rh0-5T-1lu" id="u11-bu-oLy"/>
@@ -70,10 +85,10 @@
                                     </collectionView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="vI0-5p-okr" secondAttribute="trailing" id="56T-tX-DxM"/>
-                                    <constraint firstItem="vI0-5p-okr" firstAttribute="leading" secondItem="7KK-9J-pzo" secondAttribute="leading" id="BbO-6k-tSl"/>
-                                    <constraint firstAttribute="bottom" secondItem="vI0-5p-okr" secondAttribute="bottom" id="iG6-1N-16X"/>
-                                    <constraint firstItem="vI0-5p-okr" firstAttribute="top" secondItem="7KK-9J-pzo" secondAttribute="top" id="vsj-BA-6aV"/>
+                                    <constraint firstAttribute="trailing" secondItem="vI0-5p-okr" secondAttribute="trailing" constant="8" id="56T-tX-DxM"/>
+                                    <constraint firstItem="vI0-5p-okr" firstAttribute="leading" secondItem="7KK-9J-pzo" secondAttribute="leading" constant="8" id="BbO-6k-tSl"/>
+                                    <constraint firstAttribute="bottom" secondItem="vI0-5p-okr" secondAttribute="bottom" constant="8" id="iG6-1N-16X"/>
+                                    <constraint firstItem="vI0-5p-okr" firstAttribute="top" secondItem="7KK-9J-pzo" secondAttribute="top" constant="8" id="vsj-BA-6aV"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -85,6 +100,9 @@
                             <constraint firstItem="7KK-9J-pzo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="MiK-ZH-aMo"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="vI0-5p-okr" id="DHc-nM-OK3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
