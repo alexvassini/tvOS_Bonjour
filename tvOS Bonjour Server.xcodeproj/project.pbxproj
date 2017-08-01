@@ -20,6 +20,8 @@
 		5E4FFEFB1F2BEBB700C852D4 /* BluetoothServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4FFEFA1F2BEBB700C852D4 /* BluetoothServer.swift */; };
 		8976460B1F2FC55000B81BEB /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8976460A1F2FC55000B81BEB /* CardCollectionViewCell.swift */; };
 		8976460D1F2FE20500B81BEB /* MessageField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8976460C1F2FE20500B81BEB /* MessageField.swift */; };
+		897646151F31000300B81BEB /* BonjourClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897646141F31000300B81BEB /* BonjourClient.swift */; };
+		897646171F31001700B81BEB /* BonjourServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897646161F31001700B81BEB /* BonjourServer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,8 @@
 		5E4FFEFA1F2BEBB700C852D4 /* BluetoothServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothServer.swift; sourceTree = "<group>"; };
 		8976460A1F2FC55000B81BEB /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
 		8976460C1F2FE20500B81BEB /* MessageField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageField.swift; sourceTree = "<group>"; };
+		897646141F31000300B81BEB /* BonjourClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BonjourClient.swift; sourceTree = "<group>"; };
+		897646161F31001700B81BEB /* BonjourServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BonjourServer.swift; sourceTree = "<group>"; };
 		A7F294A37BD81698FCCA985C /* Pods-tvOS Bonjour Server.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tvOS Bonjour Server.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tvOS Bonjour Server/Pods-tvOS Bonjour Server.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,6 +104,8 @@
 		5E4FFEEB1F2BE6E100C852D4 /* TCP Server */ = {
 			isa = PBXGroup;
 			children = (
+				897646141F31000300B81BEB /* BonjourClient.swift */,
+				897646161F31001700B81BEB /* BonjourServer.swift */,
 				5E4FFEEC1F2BE76600C852D4 /* BonjourTCPClient.swift */,
 				5E4FFEED1F2BE76600C852D4 /* BonjourTCPServer.swift */,
 			);
@@ -257,8 +263,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				897646171F31001700B81BEB /* BonjourServer.swift in Sources */,
 				5E4FFEF91F2BE89C00C852D4 /* BonjourUDPServer.swift in Sources */,
 				5E4FFEDF1F2BE65200C852D4 /* ViewController.swift in Sources */,
+				897646151F31000300B81BEB /* BonjourClient.swift in Sources */,
 				8976460D1F2FE20500B81BEB /* MessageField.swift in Sources */,
 				5E4FFEF31F2BE78700C852D4 /* Bluetooth.swift in Sources */,
 				5E4FFEF71F2BE86B00C852D4 /* BonjourUDPClient.swift in Sources */,
