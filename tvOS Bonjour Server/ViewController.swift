@@ -7,28 +7,36 @@
 //
 
 import UIKit
+import CocoaAsyncSocket
 
-class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, BonjourServerDelegate {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-
+    var server: BonjourServer!
+    
+    
     @IBOutlet weak var textView: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setupCollectionView()
-        bounjourHandler()
+        // bounjourHandler()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        
+        server = BonjourServer()
+        server.delegate = self
+        
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
     func bounjourHandler(){
         
         BonjourTCPServer.sharedInstance.dataReceivedCallback = {(data) in
@@ -82,6 +90,24 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     }
     
     
+    // MARK: Bonjour server delegates
+    
+    func handleBody(body: NSString?) {
+        print("Received message: \(body)")
+        //self.receivedTextField.text = body! as String
+    }
+    
+    func connectedTo(socket: GCDAsyncSocket!) {
+        //print("Connected to " + socket.connectedHost)
+        //print("Connected to " + socket.description)
+        print( "Connected users: \( server.connectedSockets.count  )")
+    }
+    
+    func disconnected(socket: GCDAsyncSocket!) {
+        //self.xStatusText.stringValue = "Disconnected"
+        //print("User disconnected: " + socket.description)
+        print( "Connected users: \( server.connectedSockets.count  )")
+    }
     
     
 }
