@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0830"
+   LastUpgradeVersion = "0700"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6F9B58C0563588FEDE4023F49AF020D4"
+               BlueprintIdentifier = "F0BA7DC1767C3555ED3601C6F0A38C9B"
                BuildableName = "Pods_tvOS_Bonjour_Server.framework"
                BlueprintName = "Pods-tvOS Bonjour Server"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6F9B58C0563588FEDE4023F49AF020D4"
+            BlueprintIdentifier = "F0BA7DC1767C3555ED3601C6F0A38C9B"
             BuildableName = "Pods_tvOS_Bonjour_Server.framework"
             BlueprintName = "Pods-tvOS Bonjour Server"
             ReferencedContainer = "container:Pods.xcodeproj">
@@ -60,15 +60,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6F9B58C0563588FEDE4023F49AF020D4"
-            BuildableName = "Pods_tvOS_Bonjour_Server.framework"
-            BlueprintName = "Pods-tvOS Bonjour Server"
-            ReferencedContainer = "container:Pods.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="jlu-gf-wyp">
     <device id="appleTV" orientation="landscape">
         <adaptation id="light"/>
     </device>
@@ -122,6 +122,40 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--Server View Controller-->
+        <scene sceneID="IgX-oZ-i83">
+            <objects>
+                <viewController id="jlu-gf-wyp" customClass="ServerViewController" customModule="tvOS_Bonjour_Server" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mII-b8-m1k"/>
+                        <viewControllerLayoutGuide type="bottom" id="gjl-Iu-BfW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8PC-OY-TSB">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="60y-Z3-z3S" customClass="MessageField" customModule="tvOS_Bonjour_Server" customModuleProvider="target">
+                                <rect key="frame" x="500" y="500" width="920" height="380"/>
+                                <color key="backgroundColor" white="1" alpha="0.42534110915492956" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="60y-Z3-z3S" secondAttribute="trailing" constant="500" id="CdM-3g-TMT"/>
+                            <constraint firstItem="60y-Z3-z3S" firstAttribute="leading" secondItem="8PC-OY-TSB" secondAttribute="leading" constant="500" id="K38-D4-G81"/>
+                            <constraint firstItem="gjl-Iu-BfW" firstAttribute="top" secondItem="60y-Z3-z3S" secondAttribute="bottom" constant="200" id="aUE-SY-LtJ"/>
+                            <constraint firstItem="60y-Z3-z3S" firstAttribute="top" secondItem="mII-b8-m1k" secondAttribute="bottom" constant="500" id="gu9-FE-C40"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="messageView" destination="60y-Z3-z3S" id="3Iy-eX-WcW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fh4-QW-Q4d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2788" y="725"/>
         </scene>
     </scenes>
 </document>

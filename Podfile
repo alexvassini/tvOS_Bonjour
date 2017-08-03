@@ -6,5 +6,6 @@ target 'tvOS Bonjour Server' do
   use_frameworks!
 
   # Pods for tvOS Bonjour Server
-pod 'CocoaAsyncSocket'  
+
+
 end

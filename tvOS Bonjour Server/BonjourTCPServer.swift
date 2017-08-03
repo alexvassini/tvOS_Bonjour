@@ -32,11 +32,12 @@ class BonjourTCPServer : NSObject, NetServiceDelegate, StreamDelegate
 	fileprivate override init() {
 		super.init()
 		
-		self.service = NetService(domain: "local.", type: kWiTapBonjourType, name: deviceName, port: 0)
+		self.service = NetService(domain: "local.", type: kWiTapBonjourType, name: "testServer", port: 0)
 		self.service?.includesPeerToPeer = true
 		self.service?.delegate = self
 		self.service?.publish(options: .listenForConnections)
 		
+        
 		self.serviceRunning = true
 		
 	}
@@ -88,6 +89,8 @@ class BonjourTCPServer : NSObject, NetServiceDelegate, StreamDelegate
 			NSLog("connection accepted: streams opened.")
 		}
 	}
+    
+    
 
 	///////////////////////////////////////////////////////////////////////////////////////////////////
 	//  MARK: streams

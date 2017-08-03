@@ -16,5 +16,11 @@ import UIKit
     func setup() {
         textContainerInset = UIEdgeInsets.zero
         textContainer.lineFragmentPadding = 0
+        
+        textAlignment = .justified
+        layer.cornerRadius = 10
+        
+        
+        
     }
 }

@@ -7,27 +7,25 @@
 //
 
 import UIKit
-import CocoaAsyncSocket
 
-class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, BonjourServerDelegate {
+
+class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    var server: BonjourServer!
+   
     
     
-    @IBOutlet weak var textView: UITextView!
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setupCollectionView()
-        // bounjourHandler()
+         
         // Do any additional setup after loading the view, typically from a nib.
         
-        
-        server = BonjourServer()
-        server.delegate = self
+       
         
     }
     
@@ -37,17 +35,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     }
     
     
-    func bounjourHandler(){
         
-        BonjourTCPServer.sharedInstance.dataReceivedCallback = {(data) in
-            
-            print(data)
-            
-            self.textView.text = data
-            
-        }
-    }
-    
     
     func setupCollectionView() {
         
@@ -90,24 +78,6 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     }
     
     
-    // MARK: Bonjour server delegates
-    
-    func handleBody(body: NSString?) {
-        print("Received message: \(body)")
-        //self.receivedTextField.text = body! as String
-    }
-    
-    func connectedTo(socket: GCDAsyncSocket!) {
-        //print("Connected to " + socket.connectedHost)
-        //print("Connected to " + socket.description)
-        print( "Connected users: \( server.connectedSockets.count  )")
-    }
-    
-    func disconnected(socket: GCDAsyncSocket!) {
-        //self.xStatusText.stringValue = "Disconnected"
-        //print("User disconnected: " + socket.description)
-        print( "Connected users: \( server.connectedSockets.count  )")
-    }
     
     
 }
